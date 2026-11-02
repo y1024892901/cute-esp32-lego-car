@@ -1,0 +1,124 @@
+0 FILE cute-esp32-lego-car.ldr
+0 Name: Cute Pastel LEGO Style ESP32 4WD Smart Robot Car (20x16 Studs)
+0 Author: Antigravity Engineering CAD System
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0
+0 // ==========================================================================
+0 // LDraw Coordinate System Conversion (1 LDU = 0.4mm, 1 Stud = 20 LDU):
+0 //   X_ldraw : Width  (-160 LDU to +160 LDU = 16 Studs = 128mm)
+0 //   Z_ldraw : Length (-200 LDU to +200 LDU = 20 Studs = 160mm, +Z = Front)
+0 //   Y_ldraw : Height (0 = Deck Base Z=12mm, negative Y is UP, 1 Brick = -24 LDU)
+0 // Colors:
+0 //   226 = Bright Light Yellow (Cream Yellow Body)
+0 //   37  = Medium Green / Mint Green (Macaron Accent & Roof Louvers)
+0 //   15  = White (Cream White Front & Rear Bumpers)
+0 //   29  = Bright Pink (Cute Cheek Blush & Dual Mic Ports)
+0 //   72  = Dark Bluish Gray (OLED Eye Windshield Frame)
+0 // ==========================================================================
+
+0 STEP
+0 // --- LAYER 1 (Y = -24 LDU): Technic Base Bricks & Milk-White Bumpers ---
+0 // Left & Right Middle Technic 1x6 Bricks (3894.dat) bolted to Lower Acrylic Deck
+1 226 -150 -24 0 0 0 1 0 1 0 -1 0 0 3894.dat
+1 226  150 -24 0 0 0 1 0 1 0 -1 0 0 3894.dat
+1 226 -130 -24 0 0 0 1 0 1 0 -1 0 0 3009.dat
+1 226  130 -24 0 0 0 1 0 1 0 -1 0 0 3009.dat
+0 // Front & Rear Corner Pillars (2x4 Bricks 3001.dat)
+1 226 -140 -24  160 1 0 0 0 1 0 0 0 1 3001.dat
+1 226  140 -24  160 1 0 0 0 1 0 0 0 1 3001.dat
+1 226 -140 -24 -160 1 0 0 0 1 0 0 0 1 3001.dat
+1 226  140 -24 -160 1 0 0 0 1 0 0 0 1 3001.dat
+0 // Milk-White Front & Rear Curved Bumper Slopes (93273.dat & 11477.dat)
+1 15 -100 -8  210 1 0 0 0 1 0 0 0 1 93273.dat
+1 15  100 -8  210 1 0 0 0 1 0 0 0 1 93273.dat
+1 15 -100 -8 -210 1 0 0 0 1 0 0 0 1 93273.dat
+1 15  100 -8 -210 1 0 0 0 1 0 0 0 1 93273.dat
+
+0 STEP
+0 // --- LAYER 2 & 3 (Y = -48 to -72 LDU): Wheel Arches (6182.dat) & Ultrasonic Windows ---
+0 // 4x Wheel Well Arches (1x4x2 Arch 6182.dat over 34mm Wheels at Z = ±112 LDU)
+1 226 -150 -72  110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226 -130 -72  110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226  150 -72  110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226  130 -72  110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226 -150 -72 -110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226 -130 -72 -110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226  150 -72 -110 0 0 1 0 1 0 -1 0 0 6182.dat
+1 226  130 -72 -110 0 0 1 0 1 0 -1 0 0 6182.dat
+0 // Front & Rear Ultrasonic 6-Stud (120 LDU) Framing Pillars
+1 15 -90 -48  180 1 0 0 0 1 0 0 0 1 3002.dat
+1 15  90 -48  180 1 0 0 0 1 0 0 0 1 3002.dat
+1 15 -90 -48 -180 1 0 0 0 1 0 0 0 1 3002.dat
+1 15  90 -48 -180 1 0 0 0 1 0 0 0 1 3002.dat
+1 226 -140 -48 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -48 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226 -140 -72 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -72 0 0 0 1 0 1 0 -1 0 0 3001.dat
+
+0 STEP
+0 // --- LAYER 4 (Y = -96 LDU): Mint Green Macaron Waistline & Technic Long Ties ---
+1 226 -150 -96 0 0 0 1 0 1 0 -1 0 0 3703.dat
+1 226  150 -96 0 0 0 1 0 1 0 -1 0 0 3703.dat
+1 37 -130 -96  120 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37 -130 -96    0 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37 -130 -96 -120 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37  130 -96  120 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37  130 -96    0 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37  130 -96 -120 0 0 1 0 1 0 -1 0 0 3010.dat
+1 37    0 -96  180 1 0 0 0 1 0 0 0 1 3009.dat
+1 37    0 -96 -180 1 0 0 0 1 0 0 0 1 3009.dat
+
+0 STEP
+0 // --- LAYER 5 (Y = -120 LDU): Pink Cheek Blush Acoustic Mic Ports (3700.dat) ---
+0 // Left Pink Blush (INMP441 MEMS Mic Port) & Right Pink Blush (SU-03T Mic Port)
+1 29 -70 -120 190 1 0 0 0 1 0 0 0 1 3700.dat
+1 29  70 -120 190 1 0 0 0 1 0 0 0 1 3700.dat
+1 226  0 -120 180 1 0 0 0 1 0 0 0 1 3009.dat
+1 226 -140 -120  100 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226 -140 -120 -100 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -120  100 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -120 -100 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226    0 -120 -180 1 0 0 0 1 0 0 0 1 3009.dat
+
+0 STEP
+0 // --- LAYER 6 & 7 (Y = -144 to -168 LDU): Dark Gray 0.96" OLED Eye Window Frame ---
+0 // Bottom Sill of OLED Window
+1 72   0 -144 180 1 0 0 0 1 0 0 0 1 3008.dat
+0 // Left & Right Pillars of 4-Stud (80 LDU) OLED Eye Opening
+1 72 -60 -168 180 1 0 0 0 1 0 0 0 1 3004.dat
+1 72  60 -168 180 1 0 0 0 1 0 0 0 1 3004.dat
+1 226 -140 -144 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -144 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226 -140 -168 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -168 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226    0 -144 -180 1 0 0 0 1 0 0 0 1 3009.dat
+1 226    0 -168 -180 1 0 0 0 1 0 0 0 1 3009.dat
+
+0 STEP
+0 // --- LAYER 8 (Y = -192 LDU): Top Header & Smooth Tile Quick-Release Rim ---
+1 72   0 -192 180 1 0 0 0 1 0 0 0 1 3008.dat
+1 226 -140 -192 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226  140 -192 0 0 0 1 0 1 0 -1 0 0 3001.dat
+1 226    0 -192 -180 1 0 0 0 1 0 0 0 1 3009.dat
+0 // Smooth Tiles (2431.dat) along top rim leaving only 4 corner studs exposed
+1 37 -140 -200  60 0 0 1 0 1 0 -1 0 0 2431.dat
+1 37 -140 -200 -60 0 0 1 0 1 0 -1 0 0 2431.dat
+1 37  140 -200  60 0 0 1 0 1 0 -1 0 0 2431.dat
+1 37  140 -200 -60 0 0 1 0 1 0 -1 0 0 2431.dat
+
+0 STEP
+0 // --- LAYER 9 & 10 (Y = -208 to -232 LDU): Quick-Release Ventilated Roof Cap ---
+1 226 -60 -208  100 1 0 0 0 1 0 0 0 1 3032.dat
+1 226  60 -208  100 1 0 0 0 1 0 0 0 1 3032.dat
+1 226 -60 -208 -100 1 0 0 0 1 0 0 0 1 3032.dat
+1 226  60 -208 -100 1 0 0 0 1 0 0 0 1 3032.dat
+0 // Curved Roof Slopes (88930.dat) & Mint Green L298N Ventilation Grille Tiles (2412b.dat)
+1 226 -60 -224  140 1 0 0 0 1 0 0 0 1 88930.dat
+1 226  60 -224  140 1 0 0 0 1 0 0 0 1 88930.dat
+1 226 -60 -224 -140 1 0 0 0 1 0 0 0 1 88930.dat
+1 226  60 -224 -140 1 0 0 0 1 0 0 0 1 88930.dat
+1 37  -60 -216  -80 1 0 0 0 1 0 0 0 1 2412b.dat
+1 37  -60 -216 -100 1 0 0 0 1 0 0 0 1 2412b.dat
+1 37   60 -216  -80 1 0 0 0 1 0 0 0 1 2412b.dat
+1 37   60 -216 -100 1 0 0 0 1 0 0 0 1 2412b.dat
+0 NOFILE
