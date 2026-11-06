@@ -1,0 +1,90 @@
+newmtl cream_yellow
+Kd 0.990 0.910 0.600
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl mint_green
+Kd 0.640 0.890 0.780
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl milk_white
+Kd 0.970 0.970 0.950
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl blush_pink
+Kd 0.960 0.640 0.760
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl window_dark
+Kd 0.200 0.220 0.260
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl oled_screen
+Kd 0.100 0.450 0.950
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl acrylic_deck
+Kd 0.850 0.920 0.980
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl motor_gold
+Kd 0.780 0.720 0.350
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl motor_silver
+Kd 0.750 0.770 0.800
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl tire_rubber
+Kd 0.180 0.180 0.200
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl wheel_hub
+Kd 0.850 0.850 0.880
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl pcb_green
+Kd 0.150 0.550 0.250
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl battery_blue
+Kd 0.250 0.450 0.850
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl heatsink_blk
+Kd 0.150 0.150 0.160
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
+newmtl sensor_silver
+Kd 0.850 0.880 0.900
+Ka 0.2 0.2 0.2
+Ks 0.1 0.1 0.1
+Ns 10
+
