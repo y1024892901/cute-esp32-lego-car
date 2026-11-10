@@ -1,0 +1,91 @@
+newmtl smoke_black_trans
+Kd 0.120 0.120 0.140
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 0.72
+Ns 60
+
+newmtl cyber_armor_matte
+Kd 0.160 0.160 0.180
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl cyber_accent_blue
+Kd 0.050 0.700 0.950
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl chassis_carbon
+Kd 0.100 0.100 0.110
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl motor_brass
+Kd 0.820 0.720 0.350
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl motor_silver
+Kd 0.750 0.780 0.820
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl tire_rubber
+Kd 0.080 0.080 0.090
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl wheel_cyan_rim
+Kd 0.050 0.650 0.900
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl battery_blue
+Kd 0.150 0.350 0.850
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl pcb_black_gold
+Kd 0.120 0.140 0.130
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl heatsink_fin
+Kd 0.150 0.150 0.160
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl oled_hud
+Kd 0.000 0.850 1.000
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+
+newmtl ultrasonic_silver
+Kd 0.850 0.880 0.920
+Ka 0.15 0.15 0.15
+Ks 0.4 0.4 0.4
+d 1.00
+Ns 60
+

@@ -36,27 +36,18 @@
 
 ## 三、项目文件结构与交付物导航
 
+- **3D 打印专用切片模型 (`models-3d/`，适配拓竹 A1 / 256×256mm 热床)**
+  - [part1_lower_power_chassis.stl](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/part1_lower_power_chassis.stl) — 一体化动力底盘（集成 4 台 N20 减速电机固定座、2S 18650 电池仓、理线暗槽）
+  - [part2_electronics_mid_deck.stl](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/part2_electronics_mid_deck.stl) — 中层高集成电子托盘（双 L298N、ESP32 扩展底板、LM2596S、语音喇叭安装位）
+  - [part3_cyber_armor_shell.stl](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/part3_cyber_armor_shell.stl) — 赛博多面体黑透装甲主车壳（前倾战术 OLED 视窗、双发加农超声波护圈、散热进气格栅）
+  - [part4_quick_release_roof_canopy.stl](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/part4_quick_release_roof_canopy.stl) — 极客百叶风道快拆磁吸顶盖（尾翼扰流风道、4 磁点 2 秒开合）
+  - [assembled_cyber_car.stl](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/assembled_cyber_car.stl) | [assembled_cyber_car.obj](file:///home/antigravity/y1024892901/cute-esp32-lego-car/models-3d/assembled_cyber_car.obj) — 整车总装 3D 模型与彩色材质检视文件
 - **工程文档 (`docs/`)**
-  - [hardware-inventory.md](file:///d:/car/cute-esp32-lego-car/docs/hardware-inventory.md) — 订单 40 行完整解析、库存状态与可用硬件盘点
-  - [measured-dimensions.md](file:///d:/car/cute-esp32-lego-car/docs/measured-dimensions.md) — 全硬件三维包络尺寸数据库与来源分级（`VERIFIED_DATASHEET` / `SELLER_SPEC` / `MEASURE_REQUIRED`）
-  - [measurement-checklist.md](file:///d:/car/cute-esp32-lego-car/docs/measurement-checklist.md) — 9 项必测关键尺寸卡尺实测指南与参数回填方法
-  - [chassis-design.md](file:///d:/car/cute-esp32-lego-car/docs/chassis-design.md) — 三种底盘架构方案量化对比、1812-N20 电机布局与直线勾刀/激光加工图纸说明
-  - [battery-compartment.md](file:///d:/car/cute-esp32-lego-car/docs/battery-compartment.md) — 中置底层 2S 18650 电池仓结构设计、平头电芯防松措施与充放电保护规范
-  - [collision-check.md](file:///d:/car/cute-esp32-lego-car/docs/collision-check.md) — 全车三维坐标包络表与 12 项机械干涉/拔插空间校验矩阵
-  - [wiring-and-power.md](file:///d:/car/cute-esp32-lego-car/docs/wiring-and-power.md) — 双路供电拓扑（电机直驱 + LM2596S 5V 稳压）、ESP32 引脚分配表與免焊端子接线图
-  - [assembly-guide.md](file:///d:/car/cute-esp32-lego-car/docs/assembly-guide.md) — 从底盘裁切、电机调向、电子层装调到乐高外壳拼装与快拆车顶的 8 步装配手册
-  - [validation-report.md](file:///d:/car/cute-esp32-lego-car/docs/validation-report.md) — 11 项工程验收检查表与当前设计状态声明
-- **参数化 CAD 模型 (`cad/`)**
-  - [parameters.scad](file:///d:/car/cute-esp32-lego-car/cad/parameters.scad) — 统一参数化尺寸库与自动干涉断言（`assert` 冲突报警）
-  - [components.scad](file:///d:/car/cute-esp32-lego-car/cad/components.scad) — 1812-N20 电机、34mm 车轮、L298N、ESP32 扩展板、HC-SR04、OLED、SU-03T、INMP441 真实包络模型
-  - [battery-holder.scad](file:///d:/car/cute-esp32-lego-car/cad/battery-holder.scad) — 2S 18650 电池仓、防滑限位框、BMS 与主开关组件
-  - [chassis.scad](file:///d:/car/cute-esp32-lego-car/cad/chassis.scad) — 上下双层亚克力底盘 + 乐高科技梁混合转接骨架模型
-  - [electronic-layout.scad](file:///d:/car/cute-esp32-lego-car/cad/electronic-layout.scad) — 上下层全电子模块与走线通道三维排布
-  - [lego-body.scad](file:///d:/car/cute-esp32-lego-car/cad/lego-body.scad) — 奶油黄+薄荷绿+奶白保险杠+粉色腮红 Q 版乐高外壳与快拆车顶
-  - [complete-car.scad](file:///d:/car/cute-esp32-lego-car/cad/complete-car.scad) — 整车总装与爆炸视图主控文件
-- **乐高模型与采购清单 (`lego/` & 根目录)**
-  - [parts-bom.csv](file:///d:/car/cute-esp32-lego-car/lego/parts-bom.csv) — 标准乐高/高砖（Gobricks）兼容零件 BOM 清单
-  - [car-model.ldr](file:///d:/car/cute-esp32-lego-car/lego/car-model.ldr) — 标准 LDraw 积木模型文件（可直接用 BrickLink Studio / LDView 打开）
-  - [purchase-list.csv](file:///d:/car/cute-esp32-lego-car/purchase-list.csv) — 损坏件重购、紧固件补齐、电池安全升级与积木汇总采购表
-- **工程可视化视图 (`renders/`)**
-  - [front.png](file:///d:/car/cute-esp32-lego-car/renders/front.png) | [side.png](file:///d:/car/cute-esp32-lego-car/renders/side.png) | [top.png](file:///d:/car/cute-esp32-lego-car/renders/top.png) | [chassis.png](file:///d:/car/cute-esp32-lego-car/renders/chassis.png) | [internal.png](file:///d:/car/cute-esp32-lego-car/renders/internal.png) | [exploded.png](file:///d:/car/cute-esp32-lego-car/renders/exploded.png)
+  - [3d-printing-guide.md](file:///home/antigravity/y1024892901/cute-esp32-lego-car/docs/3d-printing-guide.md) — **【新】拓竹 A1 打印机两盘切片指引、黑透耗材高透/磨砂调校秘籍与电烙铁热熔铜螺母安装指南**
+  - [hardware-inventory.md](file:///home/antigravity/y1024892901/cute-esp32-lego-car/docs/hardware-inventory.md) — 订单 40 行完整解析、库存状态与可用硬件盘点
+  - [wiring-and-power.md](file:///home/antigravity/y1024892901/cute-esp32-lego-car/docs/wiring-and-power.md) — 双路供电拓扑（电机直驱 + LM2596S 5V 稳压）、ESP32 引脚分配表與免焊端子接线图
+  - [assembly-guide.md](file:///home/antigravity/y1024892901/cute-esp32-lego-car/docs/assembly-guide.md) — 机械装配、接线与传感器集成指导手册
+- **采购预算表 (`purchase-list.csv`)**
+  - [purchase-list.csv](file:///home/antigravity/y1024892901/cute-esp32-lego-car/purchase-list.csv) — 全面改用 3D 打印后采购清单：取消 ￥68 乐高积木包，加入热熔铜螺母与磁吸片，总预算降至 **￥63.80**
+- **历史归档 (`lego/` & `cad/`)**
+  - 保留历史参数化 OpenSCAD 脚本与乐高 LDraw 模型供对照参考。
